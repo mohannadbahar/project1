@@ -1,3 +1,17 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
 .desktop {
   background-color: #ffffff;
   display: flex;
@@ -1428,6 +1442,10 @@
   top: 0;
   left: 0;
 }
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
 
 .desktop .text-wrapper-36 {
   position: absolute;
@@ -1467,4 +1485,11 @@
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
+}
+:root {
+  --white-color: rgba(255, 255, 255, 1);
+  --light: rgba(244, 244, 244, 1);
+  --medium: rgba(150, 150, 150, 1);
+  --medium-dark: rgba(100, 100, 100, 1);
+  --dark-color: rgba(13, 18, 34, 1);
 }
